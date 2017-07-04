@@ -1,0 +1,33 @@
+{
+	"name": "eslint-config-58fe",
+	"version": "0.0.1",
+	"description": "This package provides 58fe's base JS .eslintrc as an extensible shared config",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"eslint": "^3.19.0",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-node": "^4.2.2",
+		"eslint-plugin-promise": "^3.5.0"
+	},
+	"dependencies": {
+		"strip-json-comments": "1.0.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RekingZhang/eslint-config-58fe.git"
+	},
+	"keywords": [
+		"eslint",
+		"config",
+		"58fe"
+	],
+	"author": "reking.zhang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/RekingZhang/eslint-config-58fe/issues"
+	},
+	"homepage": "https://github.com/RekingZhang/eslint-config-58fe#readme"
+}
