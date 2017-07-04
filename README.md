@@ -1,5 +1,7 @@
 # eslint-config-58fe
+
 This package provides 58fe's base JS .eslintrc as an extensible shared config.
+
 ## Usage
 
 ### eslint-config-elemefe
@@ -7,12 +9,13 @@ This package provides 58fe's base JS .eslintrc as an extensible shared config.
 Our default export contains all of our ESLint rules, including ECMAScript 6.
 
 First, install this package
+
 ```sh
 npm install eslint-config-58fe eslint --save-dev
 ```
+
 Then add following contents to your .eslintrc file
-```
+
 {
-  "extends": "elemefe"
+  "extends": "58fe"
 }
-```
