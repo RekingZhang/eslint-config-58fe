@@ -11,7 +11,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6.
 First, install this package
 
 ```sh
-npm install eslint-config-58fe eslint --save-dev
+npm install eslint-config-58fe eslint babel-eslint eslint-plugin-import  --save-dev
 ```
 
 Then add following contents to your .eslintrc file
