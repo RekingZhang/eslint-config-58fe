@@ -4,7 +4,7 @@ This package provides 58fe's base JS .eslintrc as an extensible shared config.
 
 ## Usage
 
-### eslint-config-elemefe
+### eslint-config-58fe
 
 Our default export contains all of our ESLint rules, including ECMAScript 6.
 
