@@ -1,6 +1,5 @@
 # JavaScript 58FE Style
 
-
 掌握本规范的最好方法是安装并在自己的代码中使用它。
 
 ## 细则
@@ -33,8 +32,9 @@
       var result = something()   // ✗ avoid.cn
     }
     ```
+
     注：如有特殊情况请用需要忽略此条规则，请用下划线开始命名变量（慎用）
-    
+
     ```js
     var _k = 1;// ✓ ok
     ```
@@ -166,8 +166,9 @@
     ```js
     // ✗ avoid
     var value = 'hello world'
-    
-    
+    ```
+
+
     console.log(value)
     ```
 
@@ -195,16 +196,17 @@
     eslint: [`one-var`](http://eslint.cn/docs/rules/one-var)
 
     ```js
-    // ✓ avoid
-    var silent = true
-    var verbose = true
-
-    // ✗ ok
+    // ✓ ok
     var silent = true,
         verbose = true;
+
+    // ✗ avoid
+    var silent = true
+    var verbose = true
     ```
+
     注：此规则只限于var,不包括let & const
-    
+
 
 -   **条件语句中赋值语句**使用括号包起来。这样使得代码更加清晰可读，而不会认为是将条件判断语句的全等号（`===`）错写成了等号（`=`）。
 
@@ -242,7 +244,9 @@
       var my_var = 'hello'           // ✗ avoid
       var myVar = 'hello'            // ✓ ok
     ```
-    注：此规则在源码中查找下划线 (_)。它忽略前导和尾部的下划线，只检查在变量名称中间的下划线。如果 ESLint 判断定某个变量是个常量（全部大写），将不会发出警告。
+
+    注：此规则在源码中查找下划线 (\_)。它忽略前导和尾部的下划线，只检查在变量名称中间的下划线。如果 ESLint 判断定某个变量是个常量（全部大写），将不会发出警告。
+
 -   **不允许有多余的行末逗号**。
 
     eslint: [`comma-dangle`](http://eslint.cn/docs/rules/comma-dangle)
@@ -1077,14 +1081,15 @@
       const name = getName()    // ✓ ok
     }
     ```
+
 -   **展开运算符与它的表达式间不要留空白**。
 
-   eslint: [`rest-spread-spacing`](http://eslint.cn/docs/rules/rest-spread-spacing)
+     eslint: [`rest-spread-spacing`](http://eslint.cn/docs/rules/rest-spread-spacing)
 
-  ```js
-  fn(... args)    // ✗ avoid
-  fn(...args)     // ✓ ok
-  ```
+    ```js
+    fn(... args)    // ✗ avoid
+    fn(...args)     // ✓ ok
+    ```
 
 -   **要求使用分号代替 ASI**。
 
@@ -1168,6 +1173,7 @@
     yield* increment()    // ✗ avoid
     yield * increment()   // ✓ ok
     ```
+
 -   要求**箭头函数**的箭头前后必须有空格。
 
     eslint: [`arrow-spacing`](http://eslint.cn/docs/rules/arrow-spacing)
@@ -1185,5 +1191,3 @@
     if (42 === age) { }    // ✗ avoid
     if (age === 42) { }    // ✓ ok
     ```
-
-
