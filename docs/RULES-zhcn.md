@@ -196,13 +196,12 @@
     eslint: [`one-var`](http://eslint.cn/docs/rules/one-var)
 
     ```js
-    // ✓ ok
-    var silent = true,
-        verbose = true;
-
     // ✗ avoid
     var silent = true
     var verbose = true
+    // ✓ ok
+    var silent = true,
+        verbose = true;
     ```
 
     注：此规则只限于var,不包括let & const
@@ -213,13 +212,12 @@
     eslint: [`no-cond-assign`](http://eslint.cn/docs/rules/no-cond-assign)
 
     ```js
-    // ✓ ok
-    while ((m = text.match(expr))) {
-      // ...
-    }
-
     // ✗ avoid
     while (m = text.match(expr)) {
+      // ...
+    }
+    // ✓ ok
+    while ((m = text.match(expr))) {
       // ...
     }
     ```
